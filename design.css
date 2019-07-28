@@ -1,0 +1,47 @@
+body{
+  background-image: url(https://cdn.guidingtech.com/media/assets/WordPress-Import/2017/06/img-12.jpg);
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+h1{
+  margin-bottom: 60px;
+  font-size: 50px;
+  text-align: center;
+  color: orange;
+}
+
+.center {
+  /* text-align: center; */
+  /* font-size: 30px; */
+  margin-top: 200px;
+  margin-left: 700px;
+  margin-right: 700px;
+  border: red 1px solid;
+  border-style: dotted;
+  border-width: thick;
+  border-radius: 10px;
+  height: 500px;
+  background-color: purple;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.form {
+  padding: 1% 16%;
+}
+
+.signin{
+  background-color: rgb(210,0,0);
+}
+
+input {
+  border: blue 2px solid;
+  border-radius: 15px;
+  border-style: double;
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+  background-color: white;
+}
