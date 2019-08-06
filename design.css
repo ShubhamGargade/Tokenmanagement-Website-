@@ -1,5 +1,6 @@
 body{
-  background-image: url(https://cdn.guidingtech.com/media/assets/WordPress-Import/2017/06/img-12.jpg);
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaTtlpP33Jz8Elqx2WN59nwyb7S9Js_tmAb9xuwcoTkrEvEHiT); */
+  background-color: #a29bfe   ;
   background-position:top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,6 +9,7 @@ body{
 h1{
   margin-bottom: 60px;
   font-size: 50px;
+  font-family: cursive;
   text-align: center;
   color: orange;
 }
@@ -18,30 +20,56 @@ h1{
   margin-top: 200px;
   margin-left: 700px;
   margin-right: 700px;
-  border: red 1px solid;
-  border-style: dotted;
+  height: 580px;
+  /* border: purple 1px solid; */
+  /* border-style: dotted; */
   border-width: thick;
   border-radius: 10px;
-  height: 500px;
-  background-color: purple;
-  opacity: 0.5;
+  /* background-color: rgb(255,192,203); */
+  /* opacity: 0.5; */
   filter: alpha(opacity=50);
 }
 
+.center:hover {
+  background-color: #a55eea;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+}
 .form {
   padding: 1% 16%;
 }
 
 .signin{
-  background-color: rgb(210,0,0);
+  /* border: 2px solid red; */
+  border-radius: 15px;
+  background-color: rgb(10,0,220);
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+  height: 60px;
+}
+.signin:hover{
+  background-size: 90px;
+  background-color: rgb(220,0,225);
 }
 
 input {
-  border: blue 2px solid;
+  /* border: red 2px solid; */
   border-radius: 15px;
-  border-style: double;
+  /* border-style: double; */
   font-size: 22px;
   height: 40px;
   width: 300px;
   background-color: white;
+}
+
+
+#radio{
+  /* margin-right: 70px; */
+  width: 20px;
+}
+
+#table{
+  border: red 2px solid;
+
 }

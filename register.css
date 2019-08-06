@@ -1,0 +1,41 @@
+body{
+  background-color: #dcdde1;
+}
+
+.middle{
+  /* border: 2px solid black; */
+  /* margin-left: 390px; */
+  /* width: 900px; */
+  height: 800px;
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+input{
+  border-radius: 15px;
+  /* border-style: double; */
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+  background-color: white;
+}
+
+.year{
+  border-radius: 15px;
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+}
+
+.register{
+  border: 2px solid red;
+  border-radius: 15px;
+  /* border-style: double; */
+  font-size: 22px;
+  height: 40px;
+  width: 300px;
+  background-color: white;
+  /* margin-top: 300px; */
+  /* margin-left:400px; */
+}
