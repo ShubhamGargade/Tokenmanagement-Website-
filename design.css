@@ -63,6 +63,11 @@ input {
   background-color: white;
 }
 
+input:focus{
+  outline: none;
+  border: 2px solid #ff6b6b;
+  border-bottom: 5px solid #eb3b5a;
+}
 
 #radio{
   /* margin-right: 70px; */
