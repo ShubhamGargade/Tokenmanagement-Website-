@@ -7,6 +7,11 @@ body{
    margin: 50px auto;
 }
 
+.radio{
+  display: none;
+}
+
+
 .tsignin,.ssignin{
   text-decoration: none;
   display: block;
@@ -16,6 +21,7 @@ body{
   color: white;
   font-size: 25px;
   padding: 10px;
+
 }
 
 .s2{
@@ -28,22 +34,33 @@ body{
   justify-content: center;
 }
 
-.middle,.middle1{
+.middle{
   /* border: 2px solid black; */
   /* margin-left: 390px; */
   /* width: 900px; */
-  height: 600px;
+  justify-content: center;
+  height: 800px;
   display: flex;
   background-color: #dcdde1;
   padding: 20px 30px 30px 30px;
   box-shadow: 2px 2px 5px #555;
   margin-top: 0px;
-  justify-content: center;
+  /* justify-content: center; */
   padding-top: 70px;
-  
+
 }
 
 .middle1{
+
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #dcdde1;
+  padding: 20px 30px 30px 167px;
+  box-shadow: 2px 2px 5px #555;
+  margin-top: 0px;
+  /* justify-content: center; */
+  padding-top: 70px;
   display: none;
 }
 
@@ -62,7 +79,7 @@ input:focus{
   border-bottom: 5px solid #8c7ae6;
 }
 
-.year{
+.year,.branch{
   border-radius: 10px;
   font-size: 22px;
   height: 40px;

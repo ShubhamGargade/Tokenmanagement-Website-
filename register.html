@@ -34,16 +34,107 @@
 
   </head>
   <body>
-    <h1 style="text-align:center; color: violet" >Create an account</h1>
+    <h1 style="text-align:center; color: violet; font-size: 50px;" > <b>Create an account</b> </h1>
     <div id="main">
-      <div id="taps">
-        <a href="#" class="ssignin s2" >Student</a>
-        <a href="#" class="tsignin" >Teacher</a>
-      </div>
+      <form class="" action="index.html" method="post">
 
-      <div class="middle">
+
+        <div id="taps">
+           <a href="#" class="ssignin s2" > <b> Student</b></a>
+          <input type="radio" class="radio" name="SorT" value="">
+          <a href="#" class="tsignin" > <b>Teacher</b> </a>
+          <input type="radio" class="radio" name="SorT" value="" >
+        </div>
+
+
+        <div class="middle">
+          <section>
+            <!-- <form class="" action="index.html" method="post"> -->
+              <table>
+                <tr>
+                  <td><input type="text" name="" value="" placeholder="First name" required></td>
+                  <!-- <td> &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </td> -->
+
+                </tr>
+
+                <tr>
+                  <td>   <br>  <br> <br>  </td>
+                </tr>
+
+
+                <tr>
+                  <td><input type="text" name="" value="" placeholder="Second name" required></td>
+                 </tr>
+
+                 <tr>
+                   <td>   <br>  <br> <br>  </td>
+                 </tr>
+                 <tr>
+
+                <tr>
+                  <td><input type="text" name="" value="" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+                </tr>
+
+                <tr>
+                  <td>  <br>  <br>  <br>  </td>
+                </tr>
+
+                <tr>
+                  <td>              <select class="year" name="">
+                                    <option value="">___Select Year___</option>
+                                    <option value="">First year</option>
+                                    <option value="">Second year</option>
+                                    <option value="">Third year</option>
+                                    <option value="">Fourth year</option>
+                                </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td> <br> <br>  <br>  </td>
+                </tr>
+
+                <tr>
+                  <td><input type="password" name="" value="" placeholder=" New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+                </tr>
+
+
+                <tr>
+                  <td> <br> <br> <br></td>
+                </tr>
+
+                <tr>
+                    <td>
+                      <select class="branch" name="">
+                                        <option value="">___Select Branch___</option>
+                                        <option value="">Computer </option>
+                                        <option value="">Mechanical</option>
+                                        <option value="">Extc</option>
+                                        <option value="">Instrumentation</option>
+                                        <option value="">Civil  </option>
+                                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                  <td> <br> <br> <br></td>
+                </tr>
+
+                <tr>
+                  <td><button type="submit" name="button" class="register" >Register</button></td>
+                </tr>
+
+              </table>
+
+            <!-- </form> -->
+
+          </section>
+        </div>
+
+
+      <div class="middle1">
         <section>
-          <form class="" action="index.html" method="post">
+          <!-- <form class="" action="index.html" method="post"> -->
             <table>
               <tr>
                 <td><input type="text" name="" value="" placeholder="First name" required></td>
@@ -74,12 +165,14 @@
               </tr>
 
               <tr>
-                <td>              <select class="year" name="">
-                                  <option value="">___Select Year___</option>
-                                  <option value="">First year</option>
-                                  <option value="">Second year</option>
-                                  <option value="">Third year</option>
-                                  <option value="">Fourth year</option>
+                <td>
+                              <select class="year" name="">
+                                <option value="">___Select Branch___</option>
+                                <option value="">Computer </option>
+                                <option value="">Mechanical</option>
+                                <option value="">Extc</option>
+                                <option value="">Instrumentation</option>
+                                <option value="">Civil  </option>
                               </select>
                 </td>
               </tr>
@@ -89,7 +182,7 @@
               </tr>
 
               <tr>
-                <td><input type="password" name="" value="" placeholder=" New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+                <td><input type="password" name="s" value="" placeholder=" New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
               </tr>
 
 
@@ -103,78 +196,13 @@
 
             </table>
 
-          </form>
+          <!-- </form> -->
 
         </section>
       </div>
 
+      </form>
 
-    <div class="middle1">
-      <section>
-        <form class="" action="index.html" method="post">
-          <table>
-            <tr>
-              <td><input type="text" name="" value="" placeholder="First name" required></td>
-              <!-- <td> &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </td> -->
-
-            </tr>
-
-            <tr>
-              <td>   <br>  <br> <br>  </td>
-            </tr>
-
-
-            <tr>
-              <td><input type="text" name="" value="" placeholder="Second name" required></td>
-             </tr>
-
-             <tr>
-               <td>   <br>  <br> <br>  </td>
-             </tr>
-             <tr>
-
-            <tr>
-              <td><input type="text" name="" value="" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
-            </tr>
-
-            <tr>
-              <td>  <br>  <br>  <br>  </td>
-            </tr>
-
-            <tr>
-              <td>              <select class="year" name="">
-                                <option value="">___Select Year___</option>
-                                <option value="">First year</option>
-                                <option value="">Second year</option>
-                                <option value="">Third year</option>
-                                <option value="">Fourth year</option>
-                            </select>
-              </td>
-            </tr>
-
-            <tr>
-              <td> <br> <br>  <br>  </td>
-            </tr>
-
-            <tr>
-              <td><input type="password" name="s" value="" placeholder=" New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
-            </tr>
-
-
-            <tr>
-              <td> <br> <br> <br></td>
-            </tr>
-
-            <tr>
-              <td><button type="submit" name="button" class="register" >Register</button></td>
-            </tr>
-
-          </table>
-
-        </form>
-
-      </section>
-    </div>
     </div>
 
   </body>
