@@ -1,9 +1,9 @@
 body{
   /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaTtlpP33Jz8Elqx2WN59nwyb7S9Js_tmAb9xuwcoTkrEvEHiT); */
-  background-color: #a29bfe   ;
-  background-position:top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #6a89cc;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
 
 }
 h1{
@@ -17,27 +17,29 @@ h1{
 .center {
   /* text-align: center; */
   /* font-size: 30px; */
-  margin-top: 200px;
-  margin-left: 700px;
-  margin-right: 700px;
-  height: 580px;
+  /* margin-top: 200px; */
+  /* padding-left: 700px; */
+  /* margin-right: 700px; */
+  display: flex;
+  justify-content: center;
+  padding-left: 70px;
+  padding-right: 40px;
+  /* padding: 50px; */
+  /* justify-content: space-around; */
+  /* padding-top: 100px; */
+  /* height: 580px; */
   /* border: purple 1px solid; */
   /* border-style: dotted; */
   border-width: thick;
   border-radius: 10px;
   /* background-color: rgb(255,192,203); */
   /* opacity: 0.5; */
+  background-color: white;
   filter: alpha(opacity=50);
+  box-shadow: 1px 1px 1px 2px;
 }
 
-.center:hover {
-  background-color: #a55eea;
-  opacity: 0.7;
-  filter: alpha(opacity=50);
-}
-.form {
-  padding: 1% 16%;
-}
+
 
 .signin{
   /* border: 2px solid red; */
@@ -49,7 +51,7 @@ h1{
   height: 60px;
 }
 .signin:hover{
-  background-size: 90px;
+  /* background-size: 90px; */
   background-color: rgb(220,0,225);
 }
 

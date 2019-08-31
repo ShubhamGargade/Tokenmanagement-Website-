@@ -1,10 +1,16 @@
 body{
   background-color: white;
+
+  /* box-shadow: 2px 2px 5px #555; */
+  /* margin-left: 60px; */
 }
 
 #main{
-   width: 35%;
-   margin: 50px auto;
+   /* width: 35%; */
+   display: flex;
+   justify-content: center;
+   /* margin: 50px auto; */
+
 }
 
 .radio{
@@ -15,7 +21,7 @@ body{
 .tsignin,.ssignin{
   text-decoration: none;
   display: block;
-  width: 420px;
+  width: 300px;
   background-color: grey;
   text-align: center;
   color: white;
@@ -37,14 +43,16 @@ body{
 .middle{
   /* border: 2px solid black; */
   /* margin-left: 390px; */
-  /* width: 900px; */
+  /* width: 00px; */
+  /* border: 2px solid red; */
   justify-content: center;
-  height: 800px;
+  height: 750px;
   display: flex;
   background-color: #dcdde1;
-  padding: 20px 30px 30px 30px;
+  /* padding: 20px 30px 30px 30px; */
   box-shadow: 2px 2px 5px #555;
   margin-top: 0px;
+  margin-bottom: 30px;
   /* justify-content: center; */
   padding-top: 70px;
 
@@ -52,7 +60,7 @@ body{
 
 .middle1{
 
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: center;
   background-color: #dcdde1;

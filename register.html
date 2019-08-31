@@ -52,7 +52,7 @@
             <!-- <form class="" action="index.html" method="post"> -->
               <table>
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="First name" required></td>
+                  <td><input type="text" name="sname" value="" placeholder="  Full name" required></td>
                   <!-- <td> &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </td> -->
 
                 </tr>
@@ -62,17 +62,17 @@
                 </tr>
 
 
-                <tr>
-                  <td><input type="text" name="" value="" placeholder="Second name" required></td>
-                 </tr>
+                <!-- <tr> -->
+                  <!-- <td><input type="text" name="" value="" placeholder="Second name" required></td> -->
+                 <!-- </tr> -->
 
-                 <tr>
-                   <td>   <br>  <br> <br>  </td>
-                 </tr>
-                 <tr>
+                 <!-- <tr> -->
+                   <!-- <td>   <br>  <br> <br>  </td> -->
+                 <!-- </tr> -->
+                 <!-- <tr> -->
 
                 <tr>
-                  <td><input type="text" name="" value="" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+                  <td><input type="text" name="semail" value="" placeholder="  Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
                 </tr>
 
                 <tr>
@@ -80,7 +80,7 @@
                 </tr>
 
                 <tr>
-                  <td>              <select class="year" name="">
+                  <td>              <select class="year" name="syear">
                                     <option value="">___Select Year___</option>
                                     <option value="">First year</option>
                                     <option value="">Second year</option>
@@ -95,7 +95,17 @@
                 </tr>
 
                 <tr>
-                  <td><input type="password" name="" value="" placeholder=" New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+                  <td>
+                    <select class="branch" name="sbranch">
+                                      <option value="">___Select Branch___</option>
+                                      <option value="">Computer </option>
+                                      <option value="">Mechanical</option>
+                                      <option value="">Extc</option>
+                                      <option value="">Instrumentation</option>
+                                      <option value="">Civil  </option>
+                                  </select>
+
+                  </td>
                 </tr>
 
 
@@ -104,24 +114,27 @@
                 </tr>
 
                 <tr>
-                    <td>
-                      <select class="branch" name="">
-                                        <option value="">___Select Branch___</option>
-                                        <option value="">Computer </option>
-                                        <option value="">Mechanical</option>
-                                        <option value="">Extc</option>
-                                        <option value="">Instrumentation</option>
-                                        <option value="">Civil  </option>
-                                    </select>
-                    </td>
+
+                    <td><input type="password" name="spassword" value="" placeholder="  New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
                 </tr>
 
                 <tr>
                   <td> <br> <br> <br></td>
                 </tr>
 
+
                 <tr>
-                  <td><button type="submit" name="button" class="register" >Register</button></td>
+
+                    <td> <input type="text" name="srollno" value="" placeholder="  Roll no"></td>
+                </tr>
+
+                <tr>
+                  <td> <br> <br> <br></td>
+                </tr>
+
+
+                <tr>
+                  <td><button type="submit" name="sregister" class="register" >Register</button></td>
                 </tr>
 
               </table>
@@ -137,27 +150,27 @@
           <!-- <form class="" action="index.html" method="post"> -->
             <table>
               <tr>
-                <td><input type="text" name="" value="" placeholder="First name" required></td>
+                <td><input type="text" name="" value="" placeholder="  Full name" required></td>
                 <!-- <td> &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </td> -->
 
               </tr>
 
-              <tr>
-                <td>   <br>  <br> <br>  </td>
-              </tr>
+              <!-- <tr> -->
+                <!-- <td>   <br>  <br> <br>  </td> -->
+              <!-- </tr> -->
 
 
-              <tr>
-                <td><input type="text" name="" value="" placeholder="Second name" required></td>
-               </tr>
+              <!-- <tr> -->
+                <!-- <td><input type="text" name="" value="" placeholder="Second name" required></td> -->
+              <!-- </tr> -->
 
                <tr>
                  <td>   <br>  <br> <br>  </td>
                </tr>
-               <tr>
+
 
               <tr>
-                <td><input type="text" name="" value="" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+                <td><input type="text" name="" value="" placeholder="  Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
               </tr>
 
               <tr>
@@ -171,7 +184,7 @@
                                 <option value="">Computer </option>
                                 <option value="">Mechanical</option>
                                 <option value="">Extc</option>
-                                <option value="">Instrumentation</option>
+                                <option value="">Instrumentation<   /option>
                                 <option value="">Civil  </option>
                               </select>
                 </td>
