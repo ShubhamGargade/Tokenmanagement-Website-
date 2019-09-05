@@ -4,40 +4,59 @@
     <meta charset="utf-8">
     <title>Sign in</title>
     <link rel="stylesheet" href="design.css">
-    <!-- <script src="login.js"> -->
-      <!-- </script>  -->
+    <script src="Login.js">
+     </script>
   </head>
   <body>
 
     <div class="center">
-      <form class="form" action="https://www.google.com/" method="get"  name="form" >
+      <form class="form" action="https://www.google.com/" method="get"  name="form" onsubmit="return validation()" >
 
         <h1> <b>Log in</b> </h1>
 
         <table>
           <tr>
-            <td><input type="text" name="username" value="" placeholder=" Username or Email"  title="Enter Username or Email" required></td>
+            <td><input type="text" name="username" value="" placeholder=" Username or Email" id="username"  title="Enter Username or Email" autocomplete="off" ></td>
           </tr>
+
+          <tr>
+            <td> <span id="user" style="color:red; font-size: 18px;"></span></td>
+          </tr>
+
+
           <tr>
             <td>  <br> </td>
           </tr>
           <tr>
-            <td><input type="password" name="password" value="" placeholder=" Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+            <td><input type="password" name="password" value="" placeholder=" Password"  id="password" ></td>
           </tr>
+
+
+          <tr>
+            <td> <span id="pass" style="color:red; font-size: 16px;"></span> </td>
+          </tr>
+
           <tr>
             <td> <br> </td>
           </tr>
+
 
           <tr>
 
             <td> <h2 style = "color: violet;"> <b>Teacher</b> </h2> </td>
-            <td> <input id="radio" type="radio" name="loginas" value="" required> </td>
+            <td> <input id="radio" type="radio" name="loginas" value="Teacher"  onclick="usertype(this.value)"> </td>
 
-              <tr>
+          </tr>
+          <tr>
                 <td> <h2 style = "color: violet;"> <b>Student</b> </h2> </td>
-                <td> <input id="radio" type="radio" name="loginas" value="" required> </td>
-              </tr>
+                <td> <input id="radio" type="radio" name="loginas" value="Student"  onclick="usertype(this.value)"> </td>
+          </tr>
 
+          <tr>
+            <td> <input type="text" name="" id="hide" value=""> </td>
+          </tr>
+          <tr>
+            <td> <span id="whologin" style="color:red; font-size: 18px;"></span> </td>
           </tr>
 
           <tr>
@@ -45,7 +64,7 @@
           </tr>
 
           <tr>
-            <td><button type="submit" name="signin" value="signin" class="signin"> Sign in </button> </td>
+            <td><button type="submit"  value="" class="signin"  > Sign in </button> </td>
           </tr>
 
           <tr>

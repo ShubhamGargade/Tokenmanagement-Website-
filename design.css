@@ -76,6 +76,10 @@ input:focus{
   width: 20px;
 }
 
+#hide{
+  display: none;
+}
+
 #table{
   border: red 2px solid;
 

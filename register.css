@@ -1,21 +1,25 @@
 body{
   background-color: white;
-
   /* box-shadow: 2px 2px 5px #555; */
-  /* margin-left: 60px; */
+  display: flex;
+  justify-content: center;
+  /* margin-left: 760px; */
+  /* margin-right: 560px; */
 }
 
 #main{
    /* width: 35%; */
-   display: flex;
-   justify-content: center;
+   /* display: flex; */
+   /* justify-content: center; */
    /* margin: 50px auto; */
+   margin-top: 10px;
+   /* border: 2px solid blue; */
 
 }
 
-.radio{
+/* .radio{
   display: none;
-}
+} */
 
 
 .tsignin,.ssignin{
@@ -27,7 +31,30 @@ body{
   color: white;
   font-size: 25px;
   padding: 10px;
+  /* border: 2px solid blue; */
+  /* margin-bottom: 850px; */
+}
 
+.middle,.middle1{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #dcdde1;
+  padding-bottom: 30px;
+  /* border: 2px solid #9c88ff; */
+  /* margin-left: 100px; */
+}
+
+.middle1{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #dcdde1;
+  display: none;
+  padding-left: 160px;
+  padding-bottom: 30px;
+  /* border: 2px solid #9c88ff; */
+  /* margin-left: 100px; */
 }
 
 .s2{
@@ -38,39 +65,9 @@ body{
 #taps{
   display: flex;
   justify-content: center;
-}
-
-.middle{
-  /* border: 2px solid black; */
-  /* margin-left: 390px; */
-  /* width: 00px; */
-  /* border: 2px solid red; */
-  justify-content: center;
-  height: 750px;
-  display: flex;
-  background-color: #dcdde1;
-  /* padding: 20px 30px 30px 30px; */
-  box-shadow: 2px 2px 5px #555;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  /* justify-content: center; */
-  padding-top: 70px;
 
 }
 
-.middle1{
-
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  background-color: #dcdde1;
-  padding: 20px 30px 30px 167px;
-  box-shadow: 2px 2px 5px #555;
-  margin-top: 0px;
-  /* justify-content: center; */
-  padding-top: 70px;
-  display: none;
-}
 
 input{
   border-radius: 10px;

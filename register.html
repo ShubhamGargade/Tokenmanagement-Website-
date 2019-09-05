@@ -9,7 +9,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
 
-    <script type="text/javascript">
+    <script src="register.js">
+
+    </script>
+
+    <script type="text/javascript" >
       $(document).ready(function(){
           $(".tsignin").click(function(){
               $(".middle1").show();
@@ -28,34 +32,37 @@
 
       });
 
-
     </script>
 
 
   </head>
   <body>
-    <h1 style="text-align:center; color: violet; font-size: 50px;" > <b>Create an account</b> </h1>
     <div id="main">
-      <form class="" action="index.html" method="post">
-
+    <h1 style="text-align: center; color: violet; font-size: 50px;" > <b>Create an account</b> </h1>
 
         <div id="taps">
-           <a href="#" class="ssignin s2" > <b> Student</b></a>
-          <input type="radio" class="radio" name="SorT" value="">
-          <a href="#" class="tsignin" > <b>Teacher</b> </a>
-          <input type="radio" class="radio" name="SorT" value="" >
+           <a href="#" class="ssignin s2"  onclick="usertype('Student')" > <b> Student</b></a>
+          <!-- <input type="radio" class="radio" name="loginas" id="rb1" value="Student"> -->
+          <a href="#" class="tsignin"   onclick="usertype('Teacher')"> <b>Teacher</b> </a>
+          <!-- <input type="radio" class="radio" name="loginas" id="rb2" value="Teacher" > -->
         </div>
 
 
+        <!-- --------------------------------------------------------------------------FOR STUDENT'S REGISTRATION ------------------------------------------------------------------------>
+
         <div class="middle">
-          <section>
-            <!-- <form class="" action="index.html" method="post"> -->
+          <!-- <section> -->
+            <form class="" action="https://www.facebook.com"  method="get" onsubmit="return validation1()">
               <table>
                 <tr>
-                  <td><input type="text" name="sname" value="" placeholder="  Full name" required></td>
-                  <!-- <td> &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </td> -->
+                  <td><input type="text" name="sName" value="" placeholder="  Full name" id="sName"></td>
 
                 </tr>
+
+                <tr>
+                  <td> <span style="color:red; font-size:18px;" id="sn" ></span> </td>
+                </tr>
+
 
                 <tr>
                   <td>   <br>  <br> <br>  </td>
@@ -72,7 +79,11 @@
                  <!-- <tr> -->
 
                 <tr>
-                  <td><input type="text" name="semail" value="" placeholder="  Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+                  <td><input type="text" name="sEmail" value="" placeholder="  Email"  id="sEmail"></td>
+                </tr>
+
+                <tr>
+                  <td> <span id='se' style="color:red; font-size: 18px;" > </span> </td>
                 </tr>
 
                 <tr>
@@ -80,14 +91,18 @@
                 </tr>
 
                 <tr>
-                  <td>              <select class="year" name="syear">
+                  <td>              <select class="year" name="sYear" id="sYear">
                                     <option value="">___Select Year___</option>
-                                    <option value="">First year</option>
-                                    <option value="">Second year</option>
-                                    <option value="">Third year</option>
-                                    <option value="">Fourth year</option>
+                                    <option value="FE">First year</option>
+                                    <option value="SE">Second year</option>
+                                    <option value="TE">Third year</option>
+                                    <option value="BE">Fourth year</option>
                                 </select>
                   </td>
+                </tr>
+
+                <tr>
+                  <td> <span id='sy' style="color:red; font-size: 18px;" > </span> </td>
                 </tr>
 
                 <tr>
@@ -96,18 +111,22 @@
 
                 <tr>
                   <td>
-                    <select class="branch" name="sbranch">
+                    <select class="branch" name="sBranch" id="sBranch">
                                       <option value="">___Select Branch___</option>
-                                      <option value="">Computer </option>
-                                      <option value="">Mechanical</option>
-                                      <option value="">Extc</option>
-                                      <option value="">Instrumentation</option>
-                                      <option value="">Civil  </option>
+                                      <option value="comp">Computer </option>
+                                      <option value="mech">Mechanical</option>
+                                      <option value="extc">Extc</option>
+                                      <option value="instru">Instrumentation</option>
+                                      <option value="civil">Civil  </option>
                                   </select>
 
                   </td>
                 </tr>
 
+                <tr>
+                  <td> <span id='sb' style="color:red; font-size: 18px;" > </span> </td>
+                </tr>
+
 
                 <tr>
                   <td> <br> <br> <br></td>
@@ -115,7 +134,24 @@
 
                 <tr>
 
-                    <td><input type="password" name="spassword" value="" placeholder="  New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+                    <td><input type="password" name="sPassword" value="" placeholder="  New Password" id="sPassword" ></td>
+                </tr>
+
+                <tr>
+                  <td> <span id='spass' style="color:red; font-size: 18px;" > </span> </td>
+                </tr>
+
+                <tr>
+                  <td> <br> <br> <br></td>
+                </tr>
+
+                <tr>
+
+                    <td> <input type="text" name="sRollNo" value="" placeholder="  Roll no" id="sRollNo"></td>
+                </tr>
+
+                <tr>
+                  <td> <span id='srn' style="color:red; font-size: 18px;" > </span> </td>
                 </tr>
 
                 <tr>
@@ -124,37 +160,31 @@
 
 
                 <tr>
-
-                    <td> <input type="text" name="srollno" value="" placeholder="  Roll no"></td>
-                </tr>
-
-                <tr>
-                  <td> <br> <br> <br></td>
-                </tr>
-
-
-                <tr>
-                  <td><button type="submit" name="sregister" class="register" >Register</button></td>
+                  <td><input type="submit"  name="sregister" class="register" value="Register"  ></td>
                 </tr>
 
               </table>
 
-            <!-- </form> -->
+            </form>
 
-          </section>
+          <!-- </section> -->
         </div>
 
 
+          <!-- ------------------------------------------------------------------------------FOR TEACHER'S REGITRATION ----------------------------------------------------------------->
+
+
       <div class="middle1">
-        <section>
-          <!-- <form class="" action="index.html" method="post"> -->
+        <!-- <section> -->
+          <form class="" action="https://www.google.com"  method="get" onsubmit="return validation2()" >
             <table>
               <tr>
-                <td><input type="text" name="" value="" placeholder="  Full name" required></td>
-                <!-- <td> &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </td> -->
-
+                <td><input type="text" name="tname" value="" placeholder="  Full name" id="tName"></td>
               </tr>
 
+              <tr>
+                  <td> <span id='tn' style="color:red; font-size: 18px;" > </span> </td>
+              </tr>
               <!-- <tr> -->
                 <!-- <td>   <br>  <br> <br>  </td> -->
               <!-- </tr> -->
@@ -170,7 +200,11 @@
 
 
               <tr>
-                <td><input type="text" name="" value="" placeholder="  Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+                <td><input type="text" name="temail" value="" placeholder="  Email" id="tEmail" ></td>
+              </tr>
+
+              <tr>
+                <td> <span id='te' style="color:red; font-size: 18px;" > </span> </td>
               </tr>
 
               <tr>
@@ -179,15 +213,19 @@
 
               <tr>
                 <td>
-                              <select class="year" name="">
+                              <select class="year" name="tbranch" id="tBranch">
                                 <option value="">___Select Branch___</option>
-                                <option value="">Computer </option>
-                                <option value="">Mechanical</option>
-                                <option value="">Extc</option>
-                                <option value="">Instrumentation<   /option>
-                                <option value="">Civil  </option>
+                                <option value="comp">Computer </option>
+                                <option value="mech">Mechanical</option>
+                                <option value="extc">Extc</option>
+                                <option value="instru">Instrumentation</option>
+                                <option value="civil">Civil  </option>
                               </select>
                 </td>
+              </tr>
+
+              <tr>
+                <td> <span id='tb' style="color:red; font-size: 18px;" > </span> </td>
               </tr>
 
               <tr>
@@ -195,26 +233,30 @@
               </tr>
 
               <tr>
-                <td><input type="password" name="s" value="" placeholder=" New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+                <td><input type="password" name="tpassword" value="" placeholder=" New Password" id="tPassword"></td>
               </tr>
 
+
+              <tr>
+                <td> <span id='tpass' style="color:red; font-size: 18px;" > </span> </td>
+              </tr>
 
               <tr>
                 <td> <br> <br> <br></td>
               </tr>
 
               <tr>
-                <td><button type="submit" name="button" class="register" >Register</button></td>
+                <td><input type="submit" name="tregister" value="Register" class="register" ></td>
               </tr>
 
             </table>
 
-          <!-- </form> -->
+          </form>
 
-        </section>
+        <!-- </section> -->
       </div>
 
-      </form>
+
 
     </div>
 
