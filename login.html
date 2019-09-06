@@ -16,7 +16,7 @@
 
         <table>
           <tr>
-            <td><input type="text" name="username" value="" placeholder=" Username or Email" id="username"  title="Enter Username or Email" autocomplete="off" ></td>
+            <td><input type="text" name="username" value="" placeholder=" Username or Email" id="username"  title="Enter Username or Email" autocomplete="off" onchange="isEmpty1()" ></td>
           </tr>
 
           <tr>
@@ -28,7 +28,7 @@
             <td>  <br> </td>
           </tr>
           <tr>
-            <td><input type="password" name="password" value="" placeholder=" Password"  id="password" ></td>
+            <td><input type="password" name="password" value="" placeholder=" Password"  id="password" onchange="isEmpty2()" ></td>
           </tr>
 
 
@@ -43,17 +43,17 @@
 
           <tr>
 
-            <td> <h2 style = "color: violet;"> <b>Teacher</b> </h2> </td>
+            <td> <h2 style = "color: #e84393; font-size: 30px;"> <b>Teacher</b> </h2> </td>
             <td> <input id="radio" type="radio" name="loginas" value="Teacher"  onclick="usertype(this.value)"> </td>
 
           </tr>
           <tr>
-                <td> <h2 style = "color: violet;"> <b>Student</b> </h2> </td>
+                <td> <h2 style = "color: #e84393; font-size: 30px;"> <b>Student</b> </h2> </td>
                 <td> <input id="radio" type="radio" name="loginas" value="Student"  onclick="usertype(this.value)"> </td>
           </tr>
 
           <tr>
-            <td> <input type="text" name="" id="hide" value=""> </td>
+            <td> <input type="text" name="" id="hide" value="" onchange="isEmpty3"> </td>
           </tr>
           <tr>
             <td> <span id="whologin" style="color:red; font-size: 18px;"></span> </td>
@@ -64,7 +64,7 @@
           </tr>
 
           <tr>
-            <td><button type="submit"  value="" class="signin"  > Sign in </button> </td>
+            <td><button type="submit"  value="" class="signin"  > <b>Sign in</b> </button> </td>
           </tr>
 
           <tr>

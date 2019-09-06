@@ -89,16 +89,21 @@ input:focus{
   font-size: 22px;
   height: 40px;
   width: 300px;
+  background-color: white;
 }
 
 .register{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   border-radius: 10px;
   /* border-style: double; */
   font-size: 22px;
   height: 40px;
   width: 300px;
-  background-color: white;
+  background-color: #a29bfe;
   /* margin-top: 300px; */
   /* margin-left:400px; */
+}
+
+.register:hover{
+  background-color: #8c7ae6;
 }

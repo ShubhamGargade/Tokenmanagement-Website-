@@ -55,7 +55,7 @@
             <form class="" action="https://www.facebook.com"  method="get" onsubmit="return validation1()">
               <table>
                 <tr>
-                  <td><input type="text" name="sName" value="" placeholder="  Full name" id="sName"></td>
+                  <td><input type="text" name="sName" value="" placeholder="  Full name" id="sName" onchange="isEmpty1()"></td>
 
                 </tr>
 
@@ -79,7 +79,7 @@
                  <!-- <tr> -->
 
                 <tr>
-                  <td><input type="text" name="sEmail" value="" placeholder="  Email"  id="sEmail"></td>
+                  <td><input type="text" name="sEmail" value="" placeholder="  Email"  id="sEmail" onchange="isEmpty2()"></td>
                 </tr>
 
                 <tr>
@@ -91,7 +91,7 @@
                 </tr>
 
                 <tr>
-                  <td>              <select class="year" name="sYear" id="sYear">
+                  <td>              <select class="year" name="sYear" id="sYear" onchange="isEmpty3()">
                                     <option value="">___Select Year___</option>
                                     <option value="FE">First year</option>
                                     <option value="SE">Second year</option>
@@ -111,7 +111,7 @@
 
                 <tr>
                   <td>
-                    <select class="branch" name="sBranch" id="sBranch">
+                    <select class="branch" name="sBranch" id="sBranch" onchange="isEmpty4()">
                                       <option value="">___Select Branch___</option>
                                       <option value="comp">Computer </option>
                                       <option value="mech">Mechanical</option>
@@ -134,7 +134,7 @@
 
                 <tr>
 
-                    <td><input type="password" name="sPassword" value="" placeholder="  New Password" id="sPassword" ></td>
+                    <td><input type="password" name="sPassword" value="" placeholder="  New Password" id="sPassword" onchange="isEmpty5()" ></td>
                 </tr>
 
                 <tr>
@@ -147,7 +147,7 @@
 
                 <tr>
 
-                    <td> <input type="text" name="sRollNo" value="" placeholder="  Roll no" id="sRollNo"></td>
+                    <td> <input type="text" name="sRollNo" value="" placeholder="  Roll no" id="sRollNo" onchange="isEmpty6()"></td>
                 </tr>
 
                 <tr>
@@ -176,10 +176,10 @@
 
       <div class="middle1">
         <!-- <section> -->
-          <form class="" action="https://www.google.com"  method="get" onsubmit="return validation2()" >
+          <form class="" action="https://www.google.com"  method="get" onsubmit="return validation2()"  >
             <table>
               <tr>
-                <td><input type="text" name="tname" value="" placeholder="  Full name" id="tName"></td>
+                <td><input type="text" name="tname" value="" placeholder="  Full name" id="tName" onchange="isEmpty11()"></td>
               </tr>
 
               <tr>
@@ -200,7 +200,7 @@
 
 
               <tr>
-                <td><input type="text" name="temail" value="" placeholder="  Email" id="tEmail" ></td>
+                <td><input type="text" name="temail" value="" placeholder="  Email" id="tEmail" onchange="isEmpty22()"></td>
               </tr>
 
               <tr>
@@ -213,7 +213,7 @@
 
               <tr>
                 <td>
-                              <select class="year" name="tbranch" id="tBranch">
+                              <select class="year" name="tbranch" id="tBranch" onchange="isEmpty33()">
                                 <option value="">___Select Branch___</option>
                                 <option value="comp">Computer </option>
                                 <option value="mech">Mechanical</option>
@@ -233,7 +233,7 @@
               </tr>
 
               <tr>
-                <td><input type="password" name="tpassword" value="" placeholder=" New Password" id="tPassword"></td>
+                <td><input type="password" name="tpassword" value="" placeholder=" New Password" id="tPassword" onchange="isEmpty44()"></td>
               </tr>
 
 
