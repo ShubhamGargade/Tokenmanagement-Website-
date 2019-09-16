@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to File Submission</title>
+
+  <link rel="stylesheet" href="Tdashboard.css">
+
+  <script src="Tdashboard.js" >
+
+  </script>
+
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js">
+  </script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      // --------SHOW HOME AREA--------------------
+
+      $(".home").click(function(){
+        $(".Home").show();
+        $(".Events").hide();
+        $(".Notif").hide();
+
+      });
+
+      // --------SHOW EVENTS AREA--------------------
+
+      $(".events").click(function(){
+        $(".Events").show();
+        $(".Home").hide();
+        $(".Notif").hide();
+      });
+
+      // --------SHOW NOTIFICATIONS AREA--------------------
+
+      $(".notif").click(function(){
+        $(".Notif").show();
+        $(".Home").hide();
+        $(".Events").hide();
+      });
+
+    });
+
+  </script>
+
+
+
+</head>
+<body>
+
+<!-- ------------------------------------------------------Home button ---------------------------------------------------------------------------- -->
+  <div class="Home">
+
+    <div class="nav-header" >
+        <div class="" style="color:white" ><h1>FILE SUBMISSION</h1></div>
+        <div class=""> <a href="#" class="nav-element"><h2  class="home" >Home</h2></a></div>
+        <div class=""><a href="#" class="nav-element"><h2 class="events" onclick="gettime()"  >Events</h2></a></div>
+        <div class=""><a href="#" class="nav-element"><h2 class="notif" >Notifications</h2></a></div>
+
+
+        <div class="">
+          <select class="user" name="h" style="color:white" id="choice"  >
+            <option value="#" style="color:white"> <h2>a</h2>  </option>
+            <option value="https://github.com/" style="color:white"> Profile</option>
+            <option value="sa" style="color:white"> <h2> History </h2>  </option>
+            <option value="a"  style="color:white" >  <h2> Log out</h2> </option>
+          </select>
+        </div>
+        <!-- <div ><button type="button"  name="Login" class="nav-but" onclick="window.location.href='https://github.com/'" ><h2>Login</h2></button></div> -->
+        <!-- <div ><button type="button" name="Register" class="nav-but" onclick="window.location.href='https://github.com/'"><h2>Register</h2></button>     </div> -->
+    </div>
+
+    <div class="inner-elements">
+        <div class="">
+          <!-- <div class="dept"> -->
+              <h3 style="text-align: center; padding-bottom: 170px;  ">Department: <span class="dept" > </span> </h3>
+          <!-- </div> -->
+
+          <h1>WELCOME TO FILE SUBMISSION!. <br> USING TOKEN MANAGEMENT SYSTEM.</h1>
+          <br>
+          <h3>A token management system is used to control queues.<br> Queues of people form in various situations and locations in a queue area.</h3>
+        </div>
+    </div>
+ </div>
+
+ </div>
+
+
+ <!-- ------------------------------------------------------Events button ---------------------------------------------------------------------------- -->
+
+
+<div class="Events">
+
+   <div class="nav-header" >
+       <div class="f-s" style="color:white" ><h1>FILE SUBMISSION</h1></div>
+       <div class=""> <a href="#" class="nav-element"><h2  class="home" >Home</h2></a></div>
+       <div class=""><a href="#" class="nav-element"><h2 class="events" >Events</h2></a></div>
+       <div class=""><a href="#" class="nav-element"><h2 class="notif" >Notifications</h2></a></div>
+       <!-- <div class=""> <h2>  <button type="button" name="button" onclick="window.location.href='https://github.com/'"> Log out   </button></div> -->
+       <div class="">
+         <select class="user" name="" style="color:white" id="choice">
+           <option value="#" style="color:white"> <h2></h2>  </option>
+           <option value="#" style="color:white"> <h2> Profile </h2>  </option>
+           <option value="#" style="color:white"> <h2> History </h2>  </option>
+           <option value="#"  style="color:white" >  <h2> Log out </h2> </option>
+         </select>
+       </div>
+
+       <!-- <div class=""> <h2> <span ></span> </h2></div> -->
+       <!-- <div ><button type="button"  name="Login" class="nav-but" onclick="window.location.href='https://github.com/'" ><h2>Login</h2></button></div> -->
+       <!-- <div ><button type="button" name="Register" class="nav-but" onclick="window.location.href='https://github.com/'"><h2>Register</h2></button>     </div> -->
+   </div>
+
+   <div class="e-inner-elements">
+
+     <div class="db"> <h1> Dashboard </h1> </div>
+
+     <div class="" style=" text-align:center " >  <h1>Ongoing Events</h1>   </div>
+     <div class="" style=" text-align: center " > <button type="button"  class="create-events" name="button" onclick="events()" > Create an Event</button></div>
+
+     <div class="on-events">
+
+       <div class="card" >
+          <div class="card-body">
+          <h4 class="card-title"><span id="set-sub" >Operating System</span></h4>
+          <p class="card-text">Started at: <span id="set-st"></span>  </p>
+          <p class="card-text">Ends in:  <span id="set-et"></span>  </p>
+          <p class="card-text">Queue status: <span class="queue" ></span> </p>
+
+          </div>
+       </div>
+
+     </div>
+
+     <br>
+
+     <div class=""style=" text-align:center " >  <h1>Upcoming Events</h1>   </div>
+
+     <div class="up-events">
+        <div class="upevent-row">
+          <span>Digital Logic</span>
+        </div>
+
+     </div>
+
+   </div>
+
+  </div>
+
+ <!-- ------------------------------------------------------Notification button ---------------------------------------------------------------------------- -->
+
+<div class="Notif">
+ <div class="nav-header" >
+     <div class="f-s" style="color:white" ><h1>FILE SUBMISSION</h1></div>
+     <div class=""> <a href="#" class="nav-element"><h2  class="home" >Home</h2></a></div>
+     <div class=""><a href="#" class="nav-element"><h2 class="events" >Events</h2></a></div>
+     <div class=""><a href="#" class="nav-element"><h2 class="notif" >Notifications</h2></a></div>
+     <div class=""> <h2> <span >  </span> </h2>  </div>
+
+     <div class="">
+       <select class="user" name="" style="color:white" id="choice">
+         <option value="#" style="color:white"> <h2></h2>  </option>
+         <option value="#" style="color:white" > Profile</option>
+         <option value="#" style="color:white"> <h2> History </h2>  </option>
+         <option value="#" style="color:white">  <h2> Log out </h2> </option>
+       </select>
+     </div>
+     <!-- <div ><button type="button"  name="Login" class="nav-but" onclick="window.location.href='https://github.com/'" ><h2>Login</h2></button></div> -->
+     <!-- <div ><button type="button" name="Register" class="nav-but" onclick="window.location.href='https://github.com/'"><h2>Register</h2></button>     </div> -->
+ </div>
+
+
+   <div class="n-inner-elements ">
+
+   </div>
+ </div>
+
+</body>
+</html>

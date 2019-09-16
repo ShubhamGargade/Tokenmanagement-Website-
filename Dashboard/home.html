@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to File Submission</title>
+  <link rel="stylesheet" href="home.css">
+
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js">
+  </script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      // --------SHOW HOME PAGE--------------------
+
+      $(".home").click(function(){
+        $(".Home").show();
+        $(".Events").hide();
+      });
+
+      // --------SHOW EVENTS PAGE--------------------
+
+      $(".events").click(function(){
+        $(".Events").show();
+        $(".Home").hide();
+      });
+
+    });
+
+  </script>
+
+</head>
+<body>
+
+  <!-- -------------------------------------------------------------------------------------- HOME PAGE ------------------------------------------------------------------------------------------------ -->
+
+ <div class="Home">
+
+    <div class="nav-header" >
+        <div class="f-s" style="color:white" ><h1>FILE SUBMISSION</h1></div>
+        <div class=""> <a href="#"><h2  class="home" >Home</h2></a></div>
+        <div class=""><a href="#"><h2 class="events" >Events</h2></a></div>
+        <div ><button type="button"  name="Login" class="nav-but" onclick="window.location.href='file:///home/shubham/Desktop/WDLproject/Dashboard/events.html'" ><h2>Login</h2></button></div>
+        <div ><button type="button" name="Register" class="nav-but" onclick="window.location.href='https://github.com/'"><h2>Register</h2></button>     </div>
+    </div>
+
+
+    <div class="inner-elements">
+        <div class="">
+          <h1>WELCOME TO FILE SUBMISSION!. <br> USING TOKEN MANAGEMENT SYSTEM.</h1>
+          <br>
+          <h3>A token management system is used to control queues.<br> Queues of people form in various situations and locations in a queue area.</h3>
+        </div>
+    </div>
+ </div>
+
+ <!-- -------------------------------------------------------------------------------------- EVENTS PAGE ------------------------------------------------------------------------------------------------ -->
+
+
+  <div class="Events">
+
+    <div class="nav-header" >
+        <div class="f-s" style="color:white" ><h1>FILE SUBMISSION</h1></div>
+        <div class=""> <a href="#"><h2 class="home">Home</h2></a></div>
+        <div class=""><a href="#"><h2 class="events" >Events</h2></a></div>
+        <div ><button type="button"  name="Login" class="nav-but" onclick="window.location.href='https://github.com/'" ><h2>Login</h2></button></div>
+        <div ><button type="button" name="Register" class="nav-but" onclick="window.location.href='https://github.com/'"><h2>Register</h2></button>     </div>
+     </div>
+
+    <div class="inner-elements">
+      <h1>Please Sigin to continue</h1>
+  </div>
+
+</body>
+</html>
