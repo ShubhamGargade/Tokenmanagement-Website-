@@ -1,0 +1,91 @@
+All,FE,_________SEM 1__________
+All,FE,Engineering Mathematics-I
+All,FE,Engineering Physics-I
+All,FE,Engineering Chemistry-I
+All,FE,Engineering Mechanics
+All,FE,Basic Electrical Engineering
+All,FE,Basic Workshop practice-I
+All,FE,_________SEM 2__________
+All,FE,Engineering Mathematics-II
+All,FE,Engineering Physics-II
+All,FE,Engineering Chemistry-II
+All,FE,Engineering Graphics
+All,FE,C programming
+All,FE,Professional Communication and Ethics- I
+All,FE,Basic Workshop practice-II
+
+Computer,SE,_________SEM 3__________
+Computer,SE,Applied Mathematics -III
+Computer,SE,Digital Logic Design and Analysis
+Computer,SE,Discrete Mathematics
+Computer,SE,Electronic Circuits and Communication Fundamentals
+Computer,SE,OOPM(Java)
+Computer,SE,_________SEM 4__________
+Computer,SE,Applied Mathematics- IV
+Computer,SE,Analysis of Algorithms
+Computer,SE,Computer Organization and Architecture
+Computer,SE,Computer Graphics
+Computer,SE,Operating System
+Computer,SE,Open Source Tech Lab
+Computer,TE,_________SEM 5__________
+Computer,TE,Microprocessor
+Computer,TE,Database Management System
+Computer,TE,Computer Network
+Computer,TE,Theory of Computer Science
+Computer,TE,Web Design Lab
+Computer,TE,Business Comm. & Ethics
+Computer,TE,_________SEM 6__________
+Computer,TE,Software Engineering
+Computer,TE,System Programming & Complier Construction
+Computer,TE,Data Warehousing & Mining
+Computer,TE,Cryptography & System Security
+Computer,TE,Mini-Project
+Computer,BE,_________SEM 7__________
+Computer,BE,Digital Signal & Image Processing
+Computer,BE,Mobile Communication & Computing
+Computer,BE,Artificial Intelligence & Soft Computing
+Computer,BE,Computational Lab-I
+Computer,BE,Major Project-I
+Computer,BE,_________SEM 8__________
+Computer,BE,Data Warehouse and Mining
+Computer,BE,Human Machine Interaction
+Computer,BE,Parallel and distributed Systems
+Computer,BE,Project II
+Computer,BE,Cloud Computing Laboratory
+
+Mechanical,SE,_________SEM 3__________
+Mechanical,SE,Applied Mathematics III
+Mechanical,SE,Thermodynamics
+Mechanical,SE,Strength of Materials
+Mechanical,SE,Production Process I
+Mechanical,SE,Material Technology
+Mechanical,SE,Machine Shop Practice I
+Mechanical,SE,_________SEM 4__________
+Mechanical,SE,Applied Mathematics IV
+Mechanical,SE,Fluid Mechanics
+Mechanical,SE,Industrial Electronics
+Mechanical,SE,Production Process II
+Mechanical,SE,Kinematics of Machinery
+Mechanical,SE,Machine Shop Practice II
+Mechanical,TE,_________SEM 5_________
+Mechanical,TE,Internal Combustion Engines
+Mechanical,TE,Mechanical Measurements and Control
+Mechanical,TE,Heat Transfer
+Mechanical,TE,Dynamics of Machinery
+Mechanical,TE,Business Communication and Ethics
+Mechanical,TE,_________SEM 6_________
+Mechanical,TE,Metrology and Quality Engineering
+Mechanical,TE,Machine Design I
+Mechanical,TE,Finite Element analysis
+Mechanical,TE,Refrigeration and Air Conditioning
+Mechanical,TE,Mechatronics Lab
+Mechanical,BE,_________SEM 7_________
+Mechanical,BE,Machine Design II
+Mechanical,BE,CAD/CAM/CAE
+Mechanical,BE,Production Planning and Control
+Mechanical,BE,Project I
+Mechanical,BE,_________SEM 8_________
+Mechanical,BE,Design of Mechanical Systems
+Mechanical,BE,Industrial Engineering and Management
+Mechanical,BE,Refrigeration and Air Conditioning
+Mechanical,BE,Project- II
